@@ -1,9 +1,9 @@
 import axios from 'axios';
 
 // const API_BASE = 'http://localhost:8080/api';
-BASE_URL = 'https://taskproject-4eqi.onrender.com'
+// BASE_URL = 'https://taskproject-4eqi.onrender.com'
 const api = axios.create({
-  baseURL: API_BASE,
+  baseURL: import.meta.env.VITE_API_URL,
   headers: { 'Content-Type': 'application/json' },
 });
 
